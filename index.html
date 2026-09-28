@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,15 +8,45 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <header><a class="brand" href="./index.html"><span aria-hidden="true">✳</span> study break.</a><span class="tagline">A little pause goes a long way.</span></header>
   <main>
-    <h1>Study Break Generator</h1>
-    <form id="break-form" novalidate>
-      <label for="minutes">How many minutes do you have for a break?</label>
-      <input id="minutes" name="minutes" type="text" inputmode="numeric"
-        required aria-describedby="message">
-      <button type="submit">Get an activity</button>
-    </form>
-    <p id="message" role="status" aria-live="polite"></p>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">✦ LESS SCROLLING. MORE RECHARGING.</p>
+        <h1 id="page-title">Big ideas.<br>Little <em>breaks.</em></h1>
+        <p class="intro-copy">Give your brain a change of scenery.<br>Tell us how long you have. We’ll find your next little reset.</p>
+        <div class="desk-art" aria-hidden="true">
+          <div class="orbit"></div><span class="spark">✦</span>
+          <div class="note">permission<br>to pause.<span>☺</span></div>
+          <div class="cup"><span>take it<br>easy</span></div>
+          <div class="book top-book">ONE THING AT A TIME</div>
+          <div class="book bottom-book">a fresh perspective</div>
+          <span class="caption">your to-do list can wait a minute.</span>
+        </div>
+      </div>
+      <section class="generator" aria-labelledby="generator-title">
+        <div class="card-top"><span class="eyebrow">YOUR MOMENT OF PAUSE</span><span class="pause" aria-hidden="true">Ⅱ</span></div>
+        <h2 id="generator-title">Let’s take a break.</h2>
+        <p class="card-copy">A small reset, picked just for your time.</p>
+        <form id="break-form" novalidate>
+          <label for="minutes">How much time do you have?</label>
+          <div class="input-wrap"><input id="minutes" name="minutes" type="text" inputmode="numeric" placeholder="5" autocomplete="off" required aria-describedby="input-hint message"><span>minutes</span></div>
+          <p id="input-hint">Any positive whole number will do.</p>
+          <button type="submit">Find my break <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="result"><span class="result-label">✧ A LITTLE SOMETHING FOR YOU</span><p id="message" role="status" aria-live="polite">Your next good idea starts with a little breathing room. Let’s find yours.</p></div>
+        <p class="footnote">No planning. No pressure. Just a pause.</p>
+      </section>
+    </section>
+    <section class="possibilities" aria-labelledby="possibilities-title">
+      <h2 id="possibilities-title">A break can be a little bit of… <span aria-hidden="true">↙</span></h2>
+      <div class="tiles">
+        <article class="tile peach"><span class="tile-icon" aria-hidden="true">↗</span><div><h3>Movement</h3><p>Stretch out. Step away. Shake it off.</p></div><span class="number" aria-hidden="true">01</span></article>
+        <article class="tile green"><span class="tile-icon" aria-hidden="true">❋</span><div><h3>A fresh perspective</h3><p>Look up. Breathe in. Find your calm.</p></div><span class="number" aria-hidden="true">02</span></article>
+        <article class="tile purple"><span class="tile-icon" aria-hidden="true">♫</span><div><h3>A little joy</h3><p>A song, a doodle, a moment for you.</p></div><span class="number" aria-hidden="true">03</span></article>
+      </div>
+    </section>
   </main>
+  <footer><span>Made for busy brains.</span><span>Pause. Reset. Come back brighter. ✦</span></footer>
 </body>
 </html>
