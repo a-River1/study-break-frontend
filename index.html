@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Break Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Study Break Generator</h1>
+    <form id="break-form" novalidate>
+      <label for="minutes">How many minutes do you have for a break?</label>
+      <input id="minutes" name="minutes" type="text" inputmode="numeric"
+        required aria-describedby="message">
+      <button type="submit">Get an activity</button>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
